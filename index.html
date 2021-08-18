@@ -18,16 +18,19 @@
         /* google font  */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+        /* general paragraph font family  */
         p {
             font-family: 'Poppins', sans-serif;
         }
 
+        /* font awesome icon color  */
         .fas,
         .far {
             color: #E77C40;
 
         }
 
+        /* text color  */
         .text-color-change {
             color: #E76F51;
 
@@ -38,7 +41,7 @@
 <body>
 
     <header>
-        <!-- nav bar starting  -->
+        <!-- nav bar  -->
 
         <nav>
             <section>
@@ -84,9 +87,8 @@
             </section>
         </nav>
 
-        <!-- nav bar end  -->
 
-        <!-- hero section started  -->
+        <!-- hero section  -->
 
         <section class="container-fluid bg-dark">
             <div class="row">
@@ -99,7 +101,7 @@
                             dolor do amet sint. Velit officia consequat duis enim velit
                             mollit. Exercitation veniam consequat sunt nostrud amet</p>
 
-                        <!-- modal start  -->
+
 
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal"
@@ -107,10 +109,10 @@
                             Purchase
                         </button>
 
-                        <!-- modal end  -->
-
                     </div>
                 </div>
+
+
                 <!-- hero section image part  -->
                 <div class="col-md-6 col-sm-12 d-flex justify-content-center">
                     <img class="img-fluid w-75" src="images/header-bike.png" alt="">
@@ -125,11 +127,19 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Add to Cart</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Add your Cart</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            Are Your Sure to Purchase it
+                            <p>Are Your Sure to Purchase this Bike:</p>
+                            <div class="text-center"><img class="w-50" src="images/header-bike.png" alt=""></div>
+                            <strong>
+                                <p>Price:$4,699</p>
+                                <p>Displacement:286cc</p>
+                                <p>Engine:Liquid-cooled DOHC single-cylinder</p>
+                                <p>Bore x Stroke:76.0 x 63.0mm</p>
+                            </strong>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
@@ -142,7 +152,7 @@
 
     </header>
 
-    <menu>
+    <main>
         <!-- Fetured Bikes section  -->
         <section class="container my-5">
             <div class="text-center mb-5">
@@ -380,21 +390,21 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="images/bike-3.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4 class="text-info fw-bold">Model:Hero Splendor Plus</h4>
+                                <div class="carousel-caption d-none d-sm-block">
+
 
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img src="images/bike-2.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4 class="text-info fw-bold">Model:Ducati Diavel 1260 S</h4>
+                                <div class="carousel-caption d-none d-sm-block">
+
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/bike-1.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4 class="text-info fw-bold">Model:KTM 790 Duke</h4>
+                                <div class="carousel-caption d-none d-sm-block">
+
                                 </div>
                             </div>
                         </div>
@@ -426,20 +436,20 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="images/bike-1.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4 class="text-info fw-bold">Model:KTM 790 Duke</h4>
+                                <div class="carousel-caption d-none d-sm-block">
+
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img src="images/bike-2.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4 class="text-info fw-bold">Model:Ducati Diavel 1260 S</h4>
+                                <div class="carousel-caption d-none d-sm-block">
+
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/bike-3.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4 class="text-info fw-bold">Model:Hero Splendor Plus</h4>
+                                <div class="carousel-caption d-none d-sm-block">
+
                                 </div>
                             </div>
                         </div>
@@ -468,7 +478,7 @@
 
             </div>
 
-            <div class="w-50 mx-auto border p-5 shadow-lg">
+            <div class="w-auto mx-auto border p-5 shadow-lg">
 
                 <form class="row g-3 ">
                     <div class="col-md-4">
@@ -522,10 +532,45 @@
 
 
 
-    </menu>
+    </main>
 
-    <footer>
+    <footer class="container-fluid bg-dark">
+        <div class="row p-5 p-5 ">
+            <div class="col-md-6 py-4">
+                <p class="text-white">Millions of people of all ages and from around
+                    the world are improving their lives with us</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="text-white">Course</p>
+                        <p class="text-white">Graphic Design</p>
+                        <p class="text-white">Web Design</p>
+                        <p class="text-white">Business</p>
+                        <p class="text-white">Marketing</p>
+                        <p class="text-white">Engineering</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-white">Terms</p>
+                        <p class="text-white">Graphic Design</p>
+                        <p class="text-white">Web Design</p>
+                        <p class="text-white">Business</p>
+                        <p class="text-white">Marketing</p>
+                        <p class="text-white">Engineering</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-white">Useful Link</p>
+                        <p class="text-white">Graphic Design</p>
+                        <p class="text-white">Web Design</p>
+                        <p class="text-white">Business</p>
+                        <p class="text-white">Marketing</p>
+                        <p class="text-white">Engineering</p>
+                    </div>
+                </div>
+            </div>
 
+
+        </div>
     </footer>
 
 
